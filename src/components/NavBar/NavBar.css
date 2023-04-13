@@ -1,0 +1,42 @@
+nav {
+    display: grid;
+    place-items: center;
+    height: 5rem;
+    background-color: var(--color-bg1);
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.nav__links a {
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+}
+
+.nav__links a:hover {
+    background-color: var(--color-bg2);
+}
+
+.menu__btn {
+    cursor: pointer;
+}
