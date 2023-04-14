@@ -1,5 +1,13 @@
-/* .slider__img {
-} */
+.mySwiper {
+    margin-top: 4rem;
+}
+
+.slider__img {
+    mask-image: linear-gradient(to right, rgba(250, 17, 17, 0.932), transparent);
+    z-index: -1;
+}
+
+
 
 .location__icon {
     font-size: 1rem;
@@ -13,27 +21,16 @@ small {
     margin-top: 7rem;
 }
 
-/* header {
-    background-color: brown;
-
-} */
-
 .hero__slide {
     position: relative;
 }
 
 .hero__overlay-text {
     position: absolute;
-    z-index: 10;
-    top: 10rem;
-    left: 10%;
+    z-index: 20;
+    top: 7rem;
+    left: 5%;
     width: 29rem;
-    /* background: linear-gradient(to left, var(--color-bg2), var(--color-bg1)); */
-    /* backdrop-filter: drop-shadow(15rem 15rem 15rem var(--color-bg1)); */
-    /* backdrop-filter: blur(5px); */
-    background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.11));
-
-
 }
 
 .hero__overlay-text h1 {
@@ -44,6 +41,6 @@ small {
 
 .hero__overlay-text p {
     color: var(--color-paragraph);
-    width: 75%;
+    width: 60%;
     font-weight: 700;
 }

@@ -1,8 +1,13 @@
 nav {
     display: grid;
     place-items: center;
-    height: 5rem;
+    height: 4rem;
     background-color: var(--color-bg1);
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    top: 0;
+    left: 0;
 }
 
 .nav__container {
