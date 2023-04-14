@@ -20,8 +20,9 @@
   --color-bg3: rgb(23, 57, 55);
   --color-bg4: #EAECE2;
   --color-search: #F2BD23;
-  --color-text1: #173937;
-  --color-paragraph: rgb(60, 92, 88);
+  --color-text1: #292929;
+  --color-text2: #0c1d1c;
+  --color-paragraph: rgb(35, 37, 37);
 
   /*========== Devices Width =======*/
   --lg-container-width: 90%;
