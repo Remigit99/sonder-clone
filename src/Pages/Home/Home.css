@@ -131,3 +131,46 @@ small {
 .btn__sec:hover {
     opacity: 0.9;
 }
+
+/*========== Services =============*/
+
+.services__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+.services__left h2 {
+    width: 65%;
+    margin-bottom: 1.5rem;
+}
+
+.services__left p {
+    width: 60%;
+    margin-bottom: 2rem;
+}
+
+.services__main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+}
+
+.service {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    /* align-items: center; */
+}
+
+.service__icon img {
+    width: 4rem;
+}
+
+.service__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+
+}

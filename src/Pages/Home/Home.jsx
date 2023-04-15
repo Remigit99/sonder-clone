@@ -14,6 +14,9 @@ import Miami from '../../assets/Miami.png';
 import NewOrleans from '../../assets/New_Orleans.png';
 import NewYork from '../../assets/New_York_City.png';
 import London from '../../assets/London.png';
+import MobileImg from '../../assets/tech_value_transparent.png'
+
+import { services } from '../../Data/ServicesData';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -175,6 +178,44 @@ const Home = () => {
 
 
 
+                </div>
+            </section>
+
+            <section id="services">
+                <div className="container services__container">
+                    <div className="services__left">
+                        <h2>Everything you need is just a tap away</h2>
+                        <p>
+                            From fresh towels to late checkout, our apps puts you in control. You stay, your way.
+                        </p>
+
+                        <div className="services__main">
+
+                            {
+                                services.map(({ id, icon, service, info }) => {
+                                    return (
+                                        <article className="service" key={id}>
+
+                                            <div className="service__icon">
+                                                <img src={icon} alt={info} />
+                                            </div>
+                                            <div className="service__content">
+                                                <p>{info}</p>
+                                                <p>{service}</p>
+                                            </div>
+                                        </article>
+                                    )
+                                })
+                            }
+
+                        </div>
+                    </div>
+
+                    <div className="services__right">
+                        <div className="services__misc">
+                            <img src={MobileImg} alt="tech_value" />
+                        </div>
+                    </div>
                 </div>
             </section>
 
