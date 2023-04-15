@@ -14,7 +14,13 @@ import Miami from '../../assets/Miami.png';
 import NewOrleans from '../../assets/New_Orleans.png';
 import NewYork from '../../assets/New_York_City.png';
 import London from '../../assets/London.png';
-import MobileImg from '../../assets/tech_value_transparent.png'
+import MobileImg from '../../assets/tech_value_transparent.png';
+import TechVideo from '../../assets/tech-value-video.mp4'
+import Gstore from '../../assets/download_android.png';
+import Astore from '../../assets/download_apple.png';
+import NYTimes from '../../assets/nyt_logo.svg';
+import Google from '../../assets/google_reviews.svg';
+import PostComp from '../../assets/gr_fastco.svg';
 
 import { services } from '../../Data/ServicesData';
 
@@ -200,8 +206,8 @@ const Home = () => {
                                                 <img src={icon} alt={info} />
                                             </div>
                                             <div className="service__content">
-                                                <p>{info}</p>
-                                                <p>{service}</p>
+                                                <h6>{info}</h6>
+                                                <h6>{service}</h6>
                                             </div>
                                         </article>
                                     )
@@ -209,13 +215,56 @@ const Home = () => {
                             }
 
                         </div>
+
+                        <div className="downloads">
+                            <a href="https://play.google.com/" target='_blank'>
+                                <img src={Gstore} alt="google__play" />
+                            </a>
+
+                            <a href="https://apps.apple.com/" target='_blank'>
+                                <img src={Astore} alt="apple__play" />
+                            </a>
+                        </div>
                     </div>
 
                     <div className="services__right">
                         <div className="services__misc">
                             <img src={MobileImg} alt="tech_value" />
+                            <video autoPlay loop preload='auto' controlsList="nodownload nofullscreen noremoteplayback">
+                                <source src={TechVideo} />
+                            </video>
                         </div>
                     </div>
+
+
+                </div>
+            </section>
+
+            <section id="features">
+                <div className="features">
+                    <article className="feature">
+                        <div className="nyt_img" >
+                            <img src={NYTimes} alt="New York Times Logo" />
+                        </div>
+
+                        <p>The next billion-dollar startups 2019</p>
+                    </article>
+
+                    <article>
+                        <div className="google__img">
+                            <img src={Google} alt="google__img" />
+                        </div>
+                    </article>
+
+                    <article className="feature">
+                        <div className="post_img">
+                            <img src={PostComp} alt="Post Company Logo" />
+                        </div>
+
+                        <p>
+                            The world's #1 most innovative travel company of 2019
+                        </p>
+                    </article>
                 </div>
             </section>
 
