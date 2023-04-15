@@ -17,7 +17,7 @@
   --color-bg1: #fff5d9;
   --color-bg2: #FCF5EB;
   --color-bg2: #dfd8cf;
-  --color-bg3: rgb(23, 57, 55);
+  --color-bg3: rgb(28, 68, 65);
   --color-bg4: #EAECE2;
   --color-search: #F2BD23;
   --color-text1: #292929;
@@ -33,6 +33,35 @@
 
   --transition: all 400ms ease;
 
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-bg3);
 }
 
 body {
@@ -53,6 +82,16 @@ img {
   object-fit: cover;
 }
 
+section {
+  padding: 5rem 0;
+}
+
 p {
-  line-height: 1.5;
+  line-height: 1.6;
+  font-weight: 600;
+  color: var(--color-paragraph);
+}
+
+.img__icon {
+  width: 1.5rem;
 }

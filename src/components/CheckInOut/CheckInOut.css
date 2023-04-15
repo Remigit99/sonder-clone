@@ -1,0 +1,13 @@
+.check__in {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+button {
+    font-family: inherit;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--color-text1);
+}

@@ -1,0 +1,12 @@
+.search__box {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    /* background-color: red; */
+}
+
+.search__box input {
+    font-family: inherit;
+    font-size: 1.1rem;
+    background: transparent;
+}

@@ -1,0 +1,10 @@
+.search__btn {
+    padding: 1rem 2rem;
+    background-color: var(--color-search);
+    font-family: inherit;
+    color: var(--color-text1);
+    border-radius: 3rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    transition: var(--transition);
+}

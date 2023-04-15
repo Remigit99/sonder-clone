@@ -7,8 +7,6 @@
     z-index: -1;
 }
 
-
-
 .location__icon {
     font-size: 1rem;
     /* margin-left: 0.5rem; */
@@ -43,4 +41,93 @@ small {
     color: var(--color-paragraph);
     width: 60%;
     font-weight: 700;
+}
+
+/*===== Search-Check-Guest=========*/
+
+.search__check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    margin-top: -3rem;
+    position: absolute;
+    z-index: 30;
+    /* width: calc(50% - 45%); */
+    background-color: white;
+    border-radius: 3rem;
+    place-items: center;
+}
+
+.search__area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3rem;
+    box-shadow: 0 0 2px var(--color-paragraph);
+    gap: 3rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-bg1);
+}
+
+
+/*========= Choice Neighborh =========*/
+
+.choice__main {
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+    column-gap: 10%;
+    /* place-items: center; */
+}
+
+.choice__header {
+    margin: 2rem 0 3rem;
+}
+
+.choice__header p {
+    width: 35%;
+    margin-top: 0.6rem;
+
+}
+
+.neighborh__img {
+    border-top-right-radius: 3rem;
+    overflow: hidden;
+}
+
+.choice__main-left,
+.choice__main-right {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.neighborbhood__info {
+    margin-top: 1.5rem;
+}
+
+.choice__main-middle .neighborhood {
+    display: grid;
+    grid-row: 1/ span 3;
+    grid-column: 2/ span 1;
+}
+
+.view__cities {
+    display: grid;
+    place-items: center;
+    margin: 3rem auto;
+}
+
+.btn__sec {
+    padding: 1rem 2rem;
+    background-color: var(--color-bg3);
+    color: whitesmoke;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: var(--transition);
+
+}
+
+.btn__sec:hover {
+    opacity: 0.9;
 }

@@ -1,0 +1,23 @@
+#guest {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.guests__counter {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.decrease__icon,
+.increase__icon {
+    font-size: 0.5rem;
+    padding: 0.6rem;
+    border-radius: 50%;
+}
+
+.decrease__icon:hover,
+.increase__icon:hover {
+    background-color: var(--color-bg2);
+}
