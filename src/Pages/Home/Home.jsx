@@ -268,6 +268,19 @@ const Home = () => {
                 </div>
             </section>
 
+            <section id="locations">
+                <div className="container locations__container">
+                    <div className="locations__header">
+                        <h1>A stay infused with creativity and culture</h1>
+                        <p>From award-winning interiors to curated neighborhood guides, our stays celebrate what's special about each city we call home.</p>
+                    </div>
+
+                    <div className="location__cities">
+
+                    </div>
+                </div>
+            </section>
+
 
         </>
     )

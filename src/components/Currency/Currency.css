@@ -1,0 +1,17 @@
+.currency__basket {
+    position: absolute;
+    top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--color-bg1);
+    padding: 1rem;
+    border-radius: 2rem;
+    gap: 4rem;
+}
+
+.currency__sec {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem
+}

@@ -45,3 +45,13 @@ nav {
 .menu__btn {
     cursor: pointer;
 }
+
+.nav__li {
+    position: relative;
+}
+
+.nav__list {
+    position: absolute;
+    top: 5rem;
+    background-color: red;
+}

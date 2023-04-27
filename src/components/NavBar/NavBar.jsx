@@ -4,6 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { AiOutlineMenu } from 'react-icons/ai';
 import NavLogo from '../../assets/sonder_logo_nav.svg';
 import '../NavBar/NavBar.css'
+import Currency from '../Currency/Currency';
 
 const NavBar = () => {
     return (
@@ -17,7 +18,16 @@ const NavBar = () => {
                 <div className="nav__left">
 
                     <ul className="nav__links">
-                        <li><NavLink > USD ($)</NavLink></li>
+                        <li className='nav__li'>
+                            <NavLink >
+                                <div className="main__currency">
+                                    USD ($)
+                                </div>
+                                <Currency className='nav__list' />
+                            </NavLink>
+                        </li>
+
+
                         <li><NavLink > English</NavLink></li>
                         <li><NavLink > Check In</NavLink></li>
                         <li><NavLink > Log In</NavLink></li>
