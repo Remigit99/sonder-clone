@@ -8,6 +8,8 @@ import Currency from '../Currency/Currency';
 import USFLAG from '../../assets/us-flag.webp'
 import Language from '../Language/Language';
 import CheckIn from '../CheckIn/CheckIn';
+import Login from '../Login/Login'
+import SignUp from '../SignUp/SignUp'
 // import { currency } from '../../Data/CurrencyData';
 
 const NavBar = () => {
@@ -39,6 +41,7 @@ const NavBar = () => {
                         <Language />
                     </div>
 
+                    {/* check In */}
                     <div className='checkin'>
                         <button type='button' className='nav__btn btn-l'>
                             <p>Check In</p>
@@ -47,22 +50,23 @@ const NavBar = () => {
                         <CheckIn className='check__modal' />
                     </div>
 
-                    {/* <ul className="nav__links">
-                        <li className='nav__li'>
-                            <NavLink >
-                                <div className="main__currency">
-                                    USD ($)
-                                </div>
-                                <Currency className='nav__list' />
-                            </NavLink>
-                        </li>
+                    {/* Login */}
+                    <div className='login'>
+                        <button type='button' className='nav__btn btn-login'>
+                            <p>Login</p>
+                        </button>
 
+                        <Login className='login__modal' />
+                    </div>
 
-                        <li><NavLink > English</NavLink></li>
-                        <li><NavLink > Check In</NavLink></li>
-                        <li><NavLink > Log In</NavLink></li>
-                        <li><NavLink > Sign Up</NavLink></li>
-                    </ul> */}
+                    {/* Sign Up */}
+                    <div className='sign-up'>
+                        <button type='button' className='nav__btn btn-signup'>
+                            <p>Sign Up</p>
+                        </button>
+
+                        <SignUp className='signup__modal' />
+                    </div>
 
                     <AiOutlineMenu className='menu__btn' />
 

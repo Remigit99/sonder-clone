@@ -1,0 +1,27 @@
+.signup__alt {
+    position: absolute;
+    top: 3.8rem;
+}
+
+
+.signup__btn {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.continue {
+    background-color: var(--color-search);
+    padding: 0.6rem 2rem;
+    border-radius: 2rem;
+}
+
+.signup__btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    background-color: antiquewhite;
+    padding: 0.5rem 0;
+    border-radius: 2rem;
+}

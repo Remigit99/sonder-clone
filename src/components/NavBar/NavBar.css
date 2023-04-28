@@ -102,3 +102,8 @@ nav {
     position: absolute;
     display: none;
 } */
+
+/*====== Login ======*/
+.login__modal {
+    display: none;
+}

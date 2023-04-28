@@ -1,0 +1,9 @@
+.btn-auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: antiquewhite;
+    padding: 0.3rem 1rem;
+    border-radius: 2rem;
+}
