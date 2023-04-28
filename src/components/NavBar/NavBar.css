@@ -46,12 +46,43 @@ nav {
     cursor: pointer;
 }
 
-.nav__li {
+/*====== Currency ======*/
+
+.currency {
     position: relative;
 }
 
-/* .nav__list {
+.nav__btn {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.2rem 0.4rem;
+    transition: var(--transition);
+}
+
+.nav__btn:hover {
+    border-radius: 1rem;
+    background-color: var(--color-bg2);
+}
+
+.currency__pop {
     position: absolute;
-    top: 5rem;
-    background-color: red;
-} */
+    padding: 0.6rem;
+    background-color: var(--color-bg1);
+    border-radius: 2rem;
+    display: none;
+
+}
+
+
+.currency__pop ul li button {
+    display: flex;
+}
+
+/*====== Language ======*/
+
+.nav__btn img {
+    width: 1.5rem;
+
+}

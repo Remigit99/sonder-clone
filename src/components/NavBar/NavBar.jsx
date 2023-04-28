@@ -5,6 +5,8 @@ import { AiOutlineMenu } from 'react-icons/ai';
 import NavLogo from '../../assets/sonder_logo_nav.svg';
 import '../NavBar/NavBar.css'
 import Currency from '../Currency/Currency';
+import USFLAG from '../../assets/us-flag.webp'
+// import { currency } from '../../Data/CurrencyData';
 
 const NavBar = () => {
     return (
@@ -17,24 +19,22 @@ const NavBar = () => {
 
                 <div className="nav__left">
 
-                    <div>
-                        <button type='button'>
+                    <div className='currency'>
+                        <button type='button' className='nav__btn btn-c'>
                             <p>USA</p>
                             <p>($)</p>
                         </button>
 
-                        <div>
-                            <p>Select your currency</p>
-                            <ul>
-                                <li>
-                                    <button type='button'>
-                                        <p>USD</p>
-                                        <p>US Dollar</p>
-                                        <p>($)</p>
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
+                        <Currency />
+                    </div>
+
+                    <div className='language'>
+                        <button type='button' className='nav__btn btn-l'>
+                            <img src={USFLAG} alt="flag" />
+                            <p>English</p>
+                        </button>
+
+                        <Currency />
                     </div>
 
                     {/* <ul className="nav__links">
