@@ -35,6 +35,10 @@ const SignUp = () => {
                         Apple
                     </button>
                 </div>
+
+                <div className="terms">
+                    By providing your email address, you agree to our <a href="https://google.com" target="_blank">Privacy Policy</a>  and <a href="https://google.com" target="_blank">Terms of Service</a>
+                </div>
             </article>
         </div>
     )
