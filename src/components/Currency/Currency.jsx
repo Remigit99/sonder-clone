@@ -8,23 +8,29 @@ import { BiCheck } from 'react-icons/bi'
 const Currency = () => {
     return (
         <div className='currency__basket'>
-            {
-                currency.map(({ code, name, Symbol }) => {
-                    return (
+            <p>Select your currency</p>
+            <ul>
 
-                        <div className="currency__sec" key={name}>
-                            <div className='currency__choice'>
-                                {<BiCheck />}
+                {
+                    currency.map(({ code, name, Symbol }) => {
+                        return (
+
+                            <div className="currency__sec" key={name}>
+                                <li className='currency__choice'>
+                                    {<BiCheck />}
+                                </li>
+                                <li>{code}</li>
+                                <li>{name}</li>
+                                <li>({Symbol})</li>
                             </div>
-                            <div>{code}</div>
-                            <div>{name}</div>
-                            <div>({Symbol})</div>
-                        </div>
 
-                    )
+                        )
 
-                })
-            }
+                    })
+                }
+
+            </ul>
+
 
         </div>
     )

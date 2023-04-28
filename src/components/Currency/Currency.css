@@ -1,12 +1,19 @@
 .currency__basket {
     position: absolute;
-    top: 4rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    top: 3.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     background-color: var(--color-bg1);
     padding: 1rem;
     border-radius: 2rem;
-    gap: 4rem;
+    gap: 2rem;
+}
+
+.currency__basket ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 }
 
 .currency__sec {

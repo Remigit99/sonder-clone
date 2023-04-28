@@ -17,7 +17,27 @@ const NavBar = () => {
 
                 <div className="nav__left">
 
-                    <ul className="nav__links">
+                    <div>
+                        <button type='button'>
+                            <p>USA</p>
+                            <p>($)</p>
+                        </button>
+
+                        <div>
+                            <p>Select your currency</p>
+                            <ul>
+                                <li>
+                                    <button type='button'>
+                                        <p>USD</p>
+                                        <p>US Dollar</p>
+                                        <p>($)</p>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* <ul className="nav__links">
                         <li className='nav__li'>
                             <NavLink >
                                 <div className="main__currency">
@@ -32,7 +52,7 @@ const NavBar = () => {
                         <li><NavLink > Check In</NavLink></li>
                         <li><NavLink > Log In</NavLink></li>
                         <li><NavLink > Sign Up</NavLink></li>
-                    </ul>
+                    </ul> */}
 
                     <AiOutlineMenu className='menu__btn' />
 
