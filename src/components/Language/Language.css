@@ -1,0 +1,23 @@
+.language__pop {
+    position: absolute;
+    top: 3.8rem;
+    display: none;
+
+}
+
+.language__pop ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.lanuage-l {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.lanuage-l img {
+    width: 1.5rem;
+}

@@ -82,7 +82,23 @@ nav {
 
 /*====== Language ======*/
 
+.language {
+    position: relative;
+}
+
 .nav__btn img {
     width: 1.5rem;
 
 }
+
+
+/*====== Check In ======*/
+
+.checkin {
+    position: relative;
+}
+
+/* .check__modal {
+    position: absolute;
+    display: none;
+} */

@@ -6,6 +6,8 @@ import NavLogo from '../../assets/sonder_logo_nav.svg';
 import '../NavBar/NavBar.css'
 import Currency from '../Currency/Currency';
 import USFLAG from '../../assets/us-flag.webp'
+import Language from '../Language/Language';
+import CheckIn from '../CheckIn/CheckIn';
 // import { currency } from '../../Data/CurrencyData';
 
 const NavBar = () => {
@@ -34,7 +36,15 @@ const NavBar = () => {
                             <p>English</p>
                         </button>
 
-                        <Currency />
+                        <Language />
+                    </div>
+
+                    <div className='checkin'>
+                        <button type='button' className='nav__btn btn-l'>
+                            <p>Check In</p>
+                        </button>
+
+                        <CheckIn className='check__modal' />
                     </div>
 
                     {/* <ul className="nav__links">
