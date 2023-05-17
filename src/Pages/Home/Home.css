@@ -241,3 +241,21 @@ small {
 .features article:nth-child(3) img {
     width: 9rem;
 }
+
+
+/*========== Stories ============*/
+
+.story__header p {
+    margin-top: 1rem;
+    width: 35%;
+}
+
+.story__slide {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.story__slide h4 {
+    width: 35%;
+}

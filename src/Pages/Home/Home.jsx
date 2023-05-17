@@ -6,8 +6,9 @@ import CheckInOut from '../../components/CheckInOut/CheckInOut'
 import Guest from '../../components/Guest/Guest'
 import SearchBtn from '../../components/SearchBtn/SearchBtn';
 import { HeaderSlideData } from '../../Data/HeaderSlideData';
+import { storiesData } from '../../Data/StoriesData';
 // import LocationIcon from '../../assets/vector7.svg';
-import { TfiLocationPin } from 'react-icons/tfi';
+import { TfiLocationPin, TfiQuoteLeft, TfiQuoteRight } from 'react-icons/tfi';
 
 import Chicago from '../../assets/Chicago.png';
 import Miami from '../../assets/Miami.png';
@@ -36,6 +37,7 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay, Pagination, EffectFade } from "swiper";
+import Footer from '../../components/Footer/Footer';
 
 
 
@@ -277,9 +279,104 @@ const Home = () => {
 
                     <div className="location__cities">
 
+                        <ul className='cities__list'>
+
+                            <li>
+                                <button type='button'><p>Philadelphia</p></button>
+                            </li>
+                            <li>
+                                <button type='button'><p>London</p></button>
+                            </li>
+                            <li>
+                                <button type='button'><p>Orlando</p></button>
+                            </li>
+                            <li>
+                                <button type='button'><p>Detroit</p></button>
+                            </li>
+                            <li>
+                                <button type='button'><p>Huston</p></button>
+                            </li>
+
+                        </ul>
+
+
                     </div>
+
+                    <div className="locations__content">
+
+                        {
+                            <article className="location__content">
+
+
+                            </article>
+                        }
+                    </div>
+
                 </div>
             </section>
+
+            <section id="amenities">
+                <div className="container amenities__container">
+                    <div className="amenities__left">
+                        <h2>Hotel amenities without hotel formality</h2>
+                        <p>From simple self check-in to boutique bathroom amenities, we bring the best of a hotel without any of the formality.</p>
+                        <button className='search__btn'>Play video</button>
+                    </div>
+
+
+                    <div className="amenities__right"></div>
+
+                </div>
+            </section>
+
+            <section className="stories">
+                <div className="container stories__container">
+                    <div className="story__header">
+                        <h3>Every stay has a story</h3>
+                        <p>It's hard to explain what makes Sonder so special. Unless, of course,you're one of our guests.</p>
+                    </div>
+
+                    {/* swiper js for stories */}
+                    <Swiper
+
+                        spaceBetween={10}
+                        slidesPerView={3}
+                        effect={'fade'}
+                        centeredSlides={true}
+                        autoplay={{
+                            delay: 3500,
+                            disableOnInteraction: false,
+                        }}
+                        pagination={{
+                            clickable: true,
+                        }}
+
+                        modules={[Autoplay, Pagination, EffectFade]}
+                        className="mySwiper "
+
+                    >
+                        {
+                            storiesData.map(({ id, story, name, city }) => {
+                                return (
+                                    <SwiperSlide className="story__slide" key={id}>
+
+
+                                        <TfiQuoteLeft />
+                                        <h4>{story}</h4>
+                                        <TfiQuoteRight />
+                                        <div className="story__info">
+                                            <h5>{name}</h5>
+                                            <small>{city}</small>
+                                        </div>
+                                    </SwiperSlide>
+                                )
+                            })
+                        }
+                    </Swiper>
+                </div>
+            </section>
+
+            <Footer />
 
 
         </>

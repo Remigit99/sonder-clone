@@ -10,6 +10,10 @@ import Language from '../Language/Language';
 import CheckIn from '../CheckIn/CheckIn';
 import Login from '../Login/Login'
 import SignUp from '../SignUp/SignUp'
+import AboutUs from '../../Pages/AboutUs/AboutUs'
+import Support from '../../Pages/Support/Support';
+import Responsibility from '../../Pages/Responsibility/Responsibility'
+import Blog from '../../Pages/Blog/Blog'
 // import { currency } from '../../Data/CurrencyData';
 
 const NavBar = () => {
@@ -68,7 +72,29 @@ const NavBar = () => {
                         <SignUp className='signup__modal' />
                     </div>
 
-                    <AiOutlineMenu className='menu__btn' />
+                    {/* More */}
+                    <div className="more">
+                        <AiOutlineMenu className='menu__btn' />
+                        <div className="more__modal">
+                            <Link to='/about-us'>
+                                <AboutUs />
+                            </Link>
+                            <Link to='/business'>
+
+                            </Link>
+                            <Link to='/support'>
+                                <Support />
+                            </Link>
+                            <Link to='/reponsibility'>
+                                <Responsibility />
+                            </Link>
+                            <Link to='/blog'>
+                                <Blog />
+                            </Link>
+                        </div>
+
+                    </div>
+
 
 
 

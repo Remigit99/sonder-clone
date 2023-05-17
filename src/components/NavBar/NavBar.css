@@ -107,3 +107,15 @@ nav {
 .login__modal {
     display: none;
 }
+
+/*====== Blog ======*/
+
+.more {
+    position: relative;
+}
+
+.more__modal {
+    position: absolute;
+    top: 3.8rem;
+    display: none;
+}

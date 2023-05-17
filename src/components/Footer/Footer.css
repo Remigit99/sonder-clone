@@ -1,0 +1,52 @@
+footer {
+    padding: 4rem 0 1rem;
+    background-color: var(--color-bg3);
+    color: var(--color-white);
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.footer__company ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.footer__company ul a {
+    color: white;
+}
+
+article h5 {
+    margin-bottom: 1rem;
+    color: rgb(153, 153, 153);
+
+}
+
+.lang-currency {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+article select {
+    padding: 0.5rem;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+article select>option {
+    background: transparent;
+}
+
+.footer__currency {
+    text-align: center;
+}
