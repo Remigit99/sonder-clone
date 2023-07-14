@@ -11,7 +11,7 @@ const SignUp = () => {
             <article className="signup__main">
 
                 <p>Sign up for access to member pricing</p>
-                <input type="email" name="email" id="email" placeholder='Email address' />
+                <input type="email" name="email" placeholder='Email address' />
 
                 <button type="submit" className='continue'>Continue</button>
 

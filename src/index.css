@@ -83,7 +83,7 @@ img {
 }
 
 section {
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
 p {
@@ -94,4 +94,30 @@ p {
 
 .img__icon {
   width: 1.5rem;
+}
+
+@media screen and (max-width:1024px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  h5 {
+    font-size: 1.1rem;
+  }
+
+  h6 {
+    font-size: 0.8rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
 }

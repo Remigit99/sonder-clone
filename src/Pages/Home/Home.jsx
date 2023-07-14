@@ -1,10 +1,10 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import '../Home/Home.css';
-import Search from '../../components/Search/Search';
-import CheckInOut from '../../components/CheckInOut/CheckInOut'
-import Guest from '../../components/Guest/Guest'
-import SearchBtn from '../../components/SearchBtn/SearchBtn';
+// import Search from '../../components/Search/Search';
+// import CheckInOut from '../../components/CheckInOut/CheckInOut'
+// import Guest from '../../components/Guest/Guest'
+// import SearchBtn from '../../components/SearchBtn/SearchBtn';
 import { HeaderSlideData } from '../../Data/HeaderSlideData';
 import { storiesData } from '../../Data/StoriesData';
 // import LocationIcon from '../../assets/vector7.svg';
@@ -22,8 +22,10 @@ import Astore from '../../assets/download_apple.png';
 import NYTimes from '../../assets/nyt_logo.svg';
 import Google from '../../assets/google_reviews.svg';
 import PostComp from '../../assets/gr_fastco.svg';
+import pin from '../../assets/vector7.svg';
 
 import { services } from '../../Data/ServicesData';
+import { cityData } from '../../Data/CityData';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -42,6 +44,12 @@ import Footer from '../../components/Footer/Footer';
 
 
 const Home = () => {
+
+    const [location, setLocation] = useState(cityData)
+    const [value, setValue] = useState(0)
+
+    const { id, place, city, img, title, desc } = cityData[value]
+
     return (
         <>
             <Swiper
@@ -89,7 +97,7 @@ const Home = () => {
                 }
             </Swiper>
 
-            <div className="search__check">
+            {/* <div className="search__check">
                 <div className="search__area">
                     <Search />
                     |<CheckInOut />|
@@ -97,7 +105,7 @@ const Home = () => {
                     <SearchBtn />
 
                 </div>
-            </div>
+            </div> */}
 
             <section id="choice">
                 <div className="container choice__container">
@@ -272,48 +280,61 @@ const Home = () => {
 
             <section id="locations">
                 <div className="container locations__container">
-                    <div className="locations__header">
-                        <h1>A stay infused with creativity and culture</h1>
-                        <p>From award-winning interiors to curated neighborhood guides, our stays celebrate what's special about each city we call home.</p>
+                    <div className="tab__header">
+                        <h2>A stay infused with creativity and culture</h2>
+                        <p>
+                            From award-winning interiors to curated neighborhood guides, our stays celebrate what's special
+                            about each city we call home.
+                        </p>
                     </div>
 
-                    <div className="location__cities">
+                    <div className="tabs__main">
+                        <div className="tabs__buttons">
+                            {
+                                cityData.map((location, index) => {
+                                    return (
+                                        <button className={`tab-btn ${value == index && "active"}`}
+                                            key={location.city}
+                                            onClick={() => setValue(index)}
+                                        >{location.city}</button>
+                                    )
+                                })
+                            }
+                        </div>
 
-                        <ul className='cities__list'>
+                        <div className="locations__content">
+                            <div className="tab__content Houston" key={id}>
+                                <div className="tab__content-left">
+                                    <img src={img} alt={city} className="location__icon" />
+                                </div>
+                                <div className="tab__content-right">
+                                    <div className="content__right-header">
+                                        <img src={pin} alt={city} className="location__icon" />
+                                        <small>{place}</small>
+                                    </div>
 
-                            <li>
-                                <button type='button'><p>Philadelphia</p></button>
-                            </li>
-                            <li>
-                                <button type='button'><p>London</p></button>
-                            </li>
-                            <li>
-                                <button type='button'><p>Orlando</p></button>
-                            </li>
-                            <li>
-                                <button type='button'><p>Detroit</p></button>
-                            </li>
-                            <li>
-                                <button type='button'><p>Huston</p></button>
-                            </li>
+                                    <div className="content__right-main">
+                                        <h3>{title}</h3>
+                                        <p> {desc}</p>
 
-                        </ul>
+                                        {<a href="#"> Read More</a>}
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
 
 
                     </div>
 
-                    <div className="locations__content">
 
-                        {
-                            <article className="location__content">
-
-
-                            </article>
-                        }
-                    </div>
 
                 </div>
-            </section>
+
+
+
+            </section >
 
             <section id="amenities">
                 <div className="container amenities__container">
@@ -337,7 +358,7 @@ const Home = () => {
                     </div>
 
                     {/* swiper js for stories */}
-                    <Swiper
+                    {/* <Swiper
 
                         spaceBetween={10}
                         slidesPerView={3}
@@ -372,7 +393,7 @@ const Home = () => {
                                 )
                             })
                         }
-                    </Swiper>
+                    </Swiper> */}
                 </div>
             </section>
 

@@ -2,6 +2,12 @@
     margin-top: 4rem;
 }
 
+/* img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+} */
+
 .slider__img {
     mask-image: linear-gradient(to right, rgba(250, 17, 17, 0.932), transparent);
     z-index: -1;
@@ -258,4 +264,103 @@ small {
 
 .story__slide h4 {
     width: 35%;
+}
+
+/*======= Cities ========*/
+
+
+.tab__header {
+    width: 45%;
+}
+
+.tab__header p {
+    width: 80%;
+    margin: 1.5rem 0 2rem;
+}
+
+.tabs__buttons {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 2px solid rgba(29, 82, 64, 0.397);
+    gap: 2rem;
+}
+
+
+.tabs__buttons button {
+    padding: 1rem 1rem 0.5rem 0;
+    text-align: center;
+    background: transparent;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.tabs__buttons button.active::after {
+    /* border-bottom: 3px solid rgb(29, 82, 64); */
+    content: '';
+    bottom: -2px;
+    width: 85%;
+    height: 3px;
+    background-color: rgb(29, 82, 64);
+    position: absolute;
+    left: 0;
+}
+
+
+
+.tab__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 5rem;
+    padding: 3rem 0;
+    overflow: hidden;
+    transition: all 500ms ease;
+
+}
+
+.tab__content-left img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.content__right-main {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.content__right-header {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-bottom: 1.2rem;
+}
+
+.location__icon {
+    width: 1rem;
+}
+
+.content__right-main h3 {
+    margin-bottom: 1.55rem;
+}
+
+.content__right-main p {
+    margin-bottom: 2.5rem;
+}
+
+.content__right-main a {
+    padding: 0.5rem 1rem;
+    background-color: rgb(29, 82, 64);
+    color: white;
+    border-radius: 2rem;
+    transition: all 400ms ease;
+    width: max-content;
+}
+
+.content__right-main a:hover {
+    background-color: rgba(29, 82, 64, 0.812);
+
 }

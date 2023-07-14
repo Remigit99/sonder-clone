@@ -80,6 +80,28 @@ nav {
     display: flex;
 }
 
+#currency--modal {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    top: 4rem;
+    position: absolute;
+    border-radius: 1rem;
+    left: 5%;
+    padding: 1rem 2rem;
+
+}
+
+#currency--modal ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.currency-c {
+    display: flex;
+}
+
 /*====== Language ======*/
 
 .language {
@@ -118,4 +140,21 @@ nav {
     position: absolute;
     top: 3.8rem;
     display: none;
+}
+
+/*====== Media Query (Tablets) ======*/
+@media screen and (max-width: 1024px) {
+
+    .nav__left {
+        position: absolute;
+        top: 100%;
+        width: 10rem;
+        display: flex;
+        flex-direction: column;
+        right: 1%;
+        background-color: var(--color-bg1);
+        display: none;
+    }
+
+
 }
